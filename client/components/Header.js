@@ -9,6 +9,9 @@ class Header extends Component {
       <nav className="navbar navbar-light">
         <Link to="/" className="navbar-brand">Redux Auth</Link>
         <ul className="nav navbar-nav">
+          <li className="nav-item">
+            
+          </li>
         </ul>
       </nav>
     );

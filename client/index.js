@@ -7,6 +7,7 @@ import thunkMiddleware from 'redux-thunk';
 import reducers from './reducers';
 import App from './components/App';
 import Header from './components/Header';
+import SignIn from './components/auth/SignIn';
 import $ from "jquery";
 
 import './scss/main.scss';
@@ -21,6 +22,7 @@ const renderApp = () => (
         <Header />
         <Switch>
           <Route exact path="/" component={App} />
+          <Route exact path="/sign-in" component={SignIn} />
         </Switch>
       </main>
     </Router>
