@@ -27,7 +27,7 @@ const jwtOptions = {
   jwtFromRequest: ExtractJwt.fromHeader('authorization'),
   secretOrKey: config.secret
 };
-
+//auth using jwt
 const jwtLogin = new JwtStrategy(jwtOptions, function(payload, done) {
   //payload - jwtToken
   User.findById(payload.sub, function(err, user) {
